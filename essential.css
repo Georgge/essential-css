@@ -94,7 +94,7 @@ input[type="radio"] {
 /*----------------Mixins-------------*/
 /*---------------Containers-----------*/
 .wrapper {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
