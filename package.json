@@ -1,0 +1,19 @@
+{
+  "name": "essential-css",
+  "version": "1.0.0",
+  "description": "Mini library with the essentials of CSS.  Made with love and stylus.",
+  "main": "essential.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgge/essential-css.git"
+  },
+  "author": "Georgge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Georgge/essential-css/issues"
+  },
+  "homepage": "https://github.com/Georgge/essential-css#readme"
+}

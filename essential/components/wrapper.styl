@@ -1,0 +1,14 @@
+$green = #b8ffd0
+
+/**
+* demoColor = false (default)
+* pmw = padding lateral for mobile first
+* pdw = padding lateral for desk query
+*/
+wrapper(demoColor, pmw, pdw,)
+  padding: pmw
+  if demoColor
+    background-color: $green
+  
+  @media screen and (min-width: 800px)
+    padding: pdw
