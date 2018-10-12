@@ -1,14 +1,27 @@
-$green = #b8ffd0
-
 /**
 * demoColor = false (default)
 * pmw = padding lateral for mobile first
 * pdw = padding lateral for desk query
 */
-wrapper(demoColor, pmw, pdw,)
+wrapper(pmw, pdw,)
   padding: pmw
-  if demoColor
+  width: 100vw
+  if $fullScrHeight
+    height: 100vh
+  else
+    height: auto
+  if $testColor
     background-color: $green
   
   @media screen and (min-width: 800px)
     padding: pdw
+
+container(screen, width = auto, height = auto)
+  if screen
+    width: 100vw
+    max-width: 100vw
+    height: 100vh
+    max-height: 100vh
+  else
+    width: width
+    height: height
