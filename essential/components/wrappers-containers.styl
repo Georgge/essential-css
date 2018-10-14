@@ -1,0 +1,44 @@
+/**
+* demoColor = false (default)
+* pmw = padding lateral for mobile first
+* pdw = padding lateral for desk query
+*/
+wrapper(pmw, pdw,)
+  padding: pmw
+  width: 100vw
+  if $fullScrHeight
+    height: 100vh
+  else
+    height: auto
+  if $testColor
+    background-color: $purple
+  
+  @media screen and (min-width: 800px)
+    padding: pdw
+
+container(width, height)
+  if $headerStatic
+    padding-top: $headerHeight
+  else
+    padding-top: $pctm
+  padding-bottom: $pcbm
+  padding-left: $pclm
+  padding-right: $pcrm
+  box-sizing: border-box
+  width: width || 100vw
+  max-width: width || 100vw
+  height: height || 100vh
+  max-height: height || 100vh
+  if $testColor
+    background-color: $green
+
+
+  @media screen and (min-width: 800px)
+    padding-top: $pctd
+    padding-bottom: $pcbd
+    padding-left: $pcld
+    padding-right: $pcrd
+
+container-into-container(width, height, plr, ptb)
+  width: auto || width
+  height: auto || height
