@@ -1,9 +1,13 @@
 @import '../main/conf'
 @import '../dependencies/normalize'
-@import '../components/wrapper.styl'
+@import '../components/wrappers-containers.styl'
+@import '../components/headers-menus.styl'
 
 .wrapper
   wrapper($pmw, $pdw)
 
 .container
-  container(true)
+  container(false, false)
+
+.header
+  header-static()
