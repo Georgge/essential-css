@@ -10,13 +10,15 @@ header-static()
   flex-wrap: nowrap
   justify-content: space-between
   align-items: center
+  padding-left: $gpm
+  padding-right: $gpm
+  box-sizing: border-box
   if $testColor
     background-color: $orange
 
 menu-container-left(width = 32px, height = 32px)
   width: width 
   height: height
-  margin-left: $gmm
   if $testColor
     background-color: $magenta
 
@@ -28,4 +30,4 @@ menu-image(icon)
   if icon
     background-image: url(icon)
   else
-    background-image: url('../essential/assets/menu-button.png')
+    background-image: url('../assets/menu-button.png')
