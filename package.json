@@ -4,8 +4,8 @@
   "description": "Mini library with the essentials of CSS.  Made with love and stylus.",
   "main": "essential.js",
   "scripts": {
-    "essential": "stylus essential/main/essential.styl -w -o css/essential.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node essential.js",
+    "test": "stylus essential/main/essential.styl -w -o essential/public/css/essential.css"
   },
   "repository": {
     "type": "git",
