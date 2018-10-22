@@ -31,3 +31,27 @@ menu-image(icon)
     background-image: url(icon)
   else
     background-image: url('../assets/menu-button.png')
+
+menu-tags()
+  position: absolute
+  right: 100vw
+  top: 0
+  width: 100vw
+  height: 100vh
+  min-width: 100vw
+  padding: $gpm
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  &:after
+    content: ""
+    height: 10%
+    width: 100%
+  > a
+    display: inline-block
+    min-width: 55%
+    text-align: center
+  
+  if $testColor
+    background-color: $purple

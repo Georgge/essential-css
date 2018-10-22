@@ -203,3 +203,27 @@ template {
   background-size: cover;
   background-image: url("../assets/menu-button.png");
 }
+.menu-tags {
+  position: absolute;
+  right: 100vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #4f518c;
+}
+.menu-tags:after {
+  content: "";
+  height: 10%;
+  width: 100%;
+}
+.menu-tags > a {
+  display: inline-block;
+  min-width: 55%;
+  text-align: center;
+}
