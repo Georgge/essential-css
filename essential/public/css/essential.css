@@ -227,3 +227,6 @@ template {
   min-width: 55%;
   text-align: center;
 }
+.menu-on {
+  right: 0;
+}
