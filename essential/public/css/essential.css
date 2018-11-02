@@ -190,6 +190,7 @@ template {
   padding-right: 10px;
   box-sizing: border-box;
   background-color: #e78e31;
+  flex-direction: row-reverse;
 }
 .menu-button {
   width: 32px;
@@ -205,16 +206,18 @@ template {
 }
 .menu-tags {
   position: absolute;
-  right: 100vw;
+  right: -100vw;
   top: 0;
   width: 100vw;
   height: 100vh;
   min-width: 100vw;
   padding: 10px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: all 0.4s ease;
   background-color: #4f518c;
 }
 .menu-tags:after {

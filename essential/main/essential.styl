@@ -12,16 +12,17 @@
 
 .header
   header-static()
+  menu-right()
 
 .menu-button
-  menu-container-left()
+  menu-container()
 
 .menu-button__variant
   $icon = false // for stablish icon: '../example.png'
   menu-image($icon)
 
 .menu-tags
-  menu-tags()
+  menu-tags(false) // true for left position or false for right position
 
 .menu-on
   menu-displacement()
