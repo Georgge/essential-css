@@ -5,7 +5,7 @@
   "main": "essential.js",
   "scripts": {
     "start": "node essential.js",
-    "test": "stylus essential/main/essential.styl -w -o essential/public/css/essential.css"
+    "compile-and-watch": "stylus essential/main/essential.styl -w -o essential/public/css/essential.css"
   },
   "repository": {
     "type": "git",
