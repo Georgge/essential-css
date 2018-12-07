@@ -45,16 +45,15 @@ store.subscribe(menuState);
 /* --- MENU INTERACTION --- */
 
 const menuButton = document.querySelector('.menu-js');
+const menuButtonBack = document.querySelector('.menu-back-js');
 const menuContainer = document.querySelector('.menu-container-js');
 
 const menuInteraction = () => {
   if (menuState()) {
     menuOn();
-    console.log(menuState());
     menuContainer.classList.add('menu-on');
   } else {
     menuOff();
-    console.log(menuState());
     menuContainer.classList.remove('menu-on');
   }
 };
@@ -62,3 +61,7 @@ const menuInteraction = () => {
 menuButton.addEventListener('click', (e) => {
   menuInteraction();
 });
+
+menuButtonBack.addEventListener('click', (e) => {
+  menuInteraction();
+})
