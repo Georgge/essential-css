@@ -1,4 +1,7 @@
+@import 'specific-mixins'
+
 header-static()
+  flexbox(space-between, center)
   width: 100vw
   max-width: 100vw
   height: $headerHeight
@@ -6,10 +9,6 @@ header-static()
   top: 0
   right: 0
   left: 0
-  display: flex
-  flex-wrap: nowrap
-  justify-content: space-between
-  align-items: center
   padding-left: $gpm
   padding-right: $gpm
   box-sizing: border-box
@@ -40,6 +39,7 @@ menu-image(icon)
     background-image: url('../assets/menu-button.png')
 
 menu-tags(position = true)
+  flexbox(center, center, wrap)
   position: absolute
   if position
     right: 100vw
@@ -51,10 +51,6 @@ menu-tags(position = true)
   min-width: 100vw
   padding: $gpm
   box-sizing: border-box
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-wrap: wrap
   transition: all 0.4s ease
   &:after
     content: ""
