@@ -1,0 +1,25 @@
+/* --- Breakpoints to device sizes --- */
+
+$phone-upper-boundary = 600px
+$tablet-portrait-upper-boundary = 900px
+$tablet-landscape-upper-boundary = 1200px
+$desktop-upper-boundary = 1800px
+
+// Possibles cases:
+// phone-only
+// tablet-portrait-up
+// tablet-landscape-up
+// desktop-up
+// big-desktop-up
+
+divice-size($device)
+  if $device == phone-only
+    @media (max-width: $phone-upper-boundary - 1)
+  else if $device == tablet-portrait-up
+    @media (min-width: $phone-upper-boundary)
+  else if $device == tablet-landscape-up
+    @media (min-width: $tablet-portrait-upper-boundary)
+  else if $device == desktop-up
+    @media (min-width: $tablet-landscape-upper-boundary)
+  else if $device == big-desktop-up
+    @media (min-width: $desktop-upper-boundary)
